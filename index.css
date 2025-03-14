@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+html{
+    cursor: url("./assets/"), auto; 
+}
+
+body{
+    background-color: black;
+    font-style: normal;
+    cursor:url('https://static.thenounproject.com/png/3839312-200.png');
+}
+
+h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 15px;
+    text-align: center;
+}
+
+p1 {
+    display: flex;
+    font-family: "Courier Prime", monospace;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    padding: 100px;
+}
+
+.header{
+    display: flex;
+    font-family: monospace; 
+    background-color: #616161;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -20;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+
+.logo {
+    display: flex;
+    width: parent;
+    background-color: none; 
+    padding-left: 50px;
+    margin-top: -10px;;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    justify-content: space-between;
+
+}
+
+li a {
+    display: flex;
+    font-size: 22px;
+    font-family: "Courier Prime", monospace;
+    color: white;
+    background: none;
+    margin-right: 5em;
+    margin-left: 7rem;
+    padding: 7px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.header li a:hover {
+    background-color: #005596;
+    animation-name: brighten;
+    animation-duration: 1.5s;
+  }
+
+
+.aboutImg:hover{
+    box-shadow: 0 0 10px 10px #CDDDA9;
+}
+
+
+.flex img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: parent;
+}
+
+#fileDiv{
+    position: absolute;
+    top: 1450px;
+    left: 40%;
+    transform: rotate(30deg);
+    
+}
+#fileAnswers{
+    display: none;
+}
+#fileDiv:hover img{
+    box-shadow: 0 0 20px 20px #CDDDA9;
+}
+
+
+#pinsDiv{
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+    justify-content: center;
+}
+.pins{
+    display: flex;
+    padding: 50px;
+}
+.pins1{
+    display: flex;
+    padding: 50px;
+}
+.pins2{
+    display: flex;
+    padding: 50px;
+}
+
+#pinsDiv:hover img{
+    box-shadow: 0 0 20px 20px #CDDDA9;
+}
+.pins1:hover img{
+    box-shadow: 0 0 20px 20px #CDDDA9;
+}
+.pins2:hover img{
+    box-shadow: 0 0 20px 20px #CDDDA9;
+}
+#pinboard{
+    position: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: parent;
+    justify-content: center;
+    z-index: 1;
+}
+
+#pinboard2{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: parent;
+    justify-content: center;
+    z-index: 1;
+}
+#cuffsDiv{
+    position: relative;
+    padding-top: -50px;
+    padding-bottom: 100px;
+}
+#cuffsDiv:hover img{
+    box-shadow: 0 0 20px 20px #CDDDA9;
+}
+#board:hover img{
+    box-shadow: 0 0 20px 20px #CDDDA9;
+}
+#board2{
+    display: none;
+}
+#board4{
+    display: none;
+}
+#board3:hover img{
+    box-shadow: 0 0 20px 20px #CDDDA9;
+}
+#ErickPng1{
+    position: relative;
+    top: 0px;
+    margin-right: 35%;
+    margin-right: auto;
+    display: block;
+}
+#ErickPng2{
+    position: relative;
+    top: 0px;
+    margin-right: 35%;
+    margin-right: auto;
+    display: none;
+}

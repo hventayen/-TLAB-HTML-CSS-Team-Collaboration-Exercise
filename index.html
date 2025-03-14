@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css"/>
+    <title>Harrold's Foundations Project</title>
+</head>
+    <body>
+        <div class="header">
+            <div class="left-links">
+                <ul>
+                    <li><a href="#home">ID</a></li>
+                    <li><a href="#about">Interests</a></li>
+                </ul>
+            </div>
+            <a href="#home" class="logo">
+                <img src="./assets/Erick.png" height="50px"  alt="logo"/>
+            </a>
+            <div class="right-links">
+                <ul>
+                    <li><a href="#projects">Facts</a></li>
+                    <li><a href="#contact">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class= "flex">
+            <p1>Wednesday, March 13th 2025</p1>
+            <img id="introImg" src="./assets/intro.gif" height="400px"/>
+            <p1>New case. Who could it be?</p1>
+
+        
+        <div class="home">
+            <a name="home" id="home"></a>
+            <p1>Let’s pick up the case file and see his personal background</p1>
+            <img src="./assets/desk.jpg" height="500px"/>
+            <div id= "fileDiv">
+            <img id="file" src="./assets/file.png" height="150px"/>
+        </div>
+            <img id="fileAnswers" src="./assets/details.png" height="400px"/>
+        </div>
+        <div class="about">
+            <a name="about" id="about"></a>
+            <p1>Could be a handful. Let’s see if we can find any more details on this guy. Interests and Hobbies?</p1>
+            <div id="pinboard">
+            <img id="pinboard1" src="./assets/pinboard.webp" height="400px"/>    
+            </div>
+            <div id="pinboard2">
+                <img id="file" src="./assets/pinboard2.png" height="400px"/>    
+            </div>
+            <div id="pinsDiv">
+            <div id= "pins">
+                <img src="./assets/pin.png" height="50px"/>
+            </div>
+            </div>
+            <p1>Now we’re getting somewhere.</p1>
+            <img src="./assets/about.gif" height="400px"/>
+        </div>
+        <div class="projects">
+            <a name="projects" id="projects"></a>
+            <p1>Any more details? Let’s hear some fun extras about this guy.</p1>
+            <div id= "board">
+                <img src="./assets/board.png" height="400px"/>
+            </div>
+            <div id= "board2">
+                <img src="./assets/board2.png" height="400px"/>
+            </div>
+            <p1>Interesting. Well if we apprehend him, we’ll have to know how deadly he is... </p1>
+            <img src="./assets/skills.gif" height="400px"/>
+        </div>
+        <div class="contact">
+            <a name="contact" id="contact"></a>
+            <p1>Let’s see his skills and experience.</p1>
+            <div id= "board3">
+                <img src="./assets/board.png" height="400px"/>
+            </div>
+            <div id= "board4">
+                <img src="./assets/board4.png" height="400px"/>
+            </div>
+            <p1>Got it. I know who this guy is now. Let’s get him!</p1>
+            <img src="./assets/alley.gif" height="300px"/>
+            <p1>HE’S RIGHT THERE! Click the cuffs and catch him!</p1>
+            <div onclick="Erick1();" id= "cuffsDiv">
+                <img onclick="Erick1();" src="./assets/cuffs.png" height="150px"/>
+            </div>
+            <div class= "erick1">
+                <img id= "ErickPng1"src="./assets/Erick.png" height="200px"/>
+            </div>
+            <div class= "erick2">
+                <img id= "ErickPng2"src="./assets/Erick2.png" height="200px"/>
+            </div>
+            <p1>Got him. Right where he belongs. Another day another saved city.</p1>
+            <img src="./assets/end.gif" height="400px"/>
+        </div>
+    </div>
+    </body>
+</html>
+<script>
+function Erick1() {
+    document.getElementById('ErickPng1').style.height = '0px';
+    document.getElementById('ErickPng2').style.display = 'block';
+}
+btn1= document.getElementById("cuffsDiv")
+btn1.addEventListener('click', e => {
+    document.getElementById('ErickPng1').style.height = '0px';
+    document.getElementById('ErickPng2').style.display = 'block';
+})
+btn2= document.getElementById("board3")
+btn2.addEventListener('click', e => {
+    document.getElementById('board3').style.height = '0px';
+    document.getElementById('board4').style.display = 'block';
+})
+btn3= document.getElementById("board")
+btn3.addEventListener('click', e => {
+    document.getElementById('board').style.height = '0px';
+    document.getElementById('board2').style.display = 'block';
+})
+btn4= document.getElementById("pinsDiv")
+btn4.addEventListener('click', e => {
+    document.getElementById('pinboard').style.height = '0px';
+    document.getElementById('pinboard2').style.display = 'block';
+})
+btn4= document.getElementById("fileDiv")
+btn4.addEventListener('click', e => {
+    document.getElementById('fileAnswers').style.display = 'block';
+})
+</script>
